@@ -14,5 +14,6 @@ public class SolutionTest {
         assertEquals(0, Positive.sum(new int[]{}));
         assertEquals(0, Positive.sum(new int[]{-1,-2,-3,-4,-5}));
         assertEquals(9, Positive.sum(new int[]{-1,2,3,4,-5}));
+        assertEquals(0, Positive.sum(new int[]{0}));
     }
 }

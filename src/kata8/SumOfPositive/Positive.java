@@ -1,8 +1,12 @@
 package kata8.SumOfPositive;
 
-public class Positive{
+import java.util.Arrays;
 
-    public static int sum(int[] arr){
-        return 0;
+public class Positive {
+
+    public static int sum(int[] arr) {
+        return Arrays.stream(arr)
+                .filter(el -> el > 0)
+                .sum();
     }
 }
